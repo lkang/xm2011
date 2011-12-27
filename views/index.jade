@@ -1,0 +1,21 @@
+h1 a buncho holiday tweets
+link(rel='stylesheet', href='/stylesheets/style.css')
+script(src="//platform.twitter.com/widgets.js", charset="utf-8")
+script(type='text/javascript', src='/javascripts/tweet_rotate.js')
+
+-for( var rnum=0; rnum<results.length; rnum++ ) {
+  .column
+    -for( var irnum=rnum; irnum<results.length/2 + rnum; irnum++) {
+      -var result = results[irnum]
+        .site1
+          each tweet in result.results
+            .tweet-frame(style='display:none') 
+              blockquote(class="twitter-tweet")
+                p msg
+                a(href='https://twitter.com/user/status/'+tweet.id_str, data-datetime="")
+          if( result.results[0] )  
+            .avatar( style="background-image : url(#{result.results[0].profile_image_url.replace('_normal', '')})" )
+    -}
+    -rnum = irnum-1
+-}
+    

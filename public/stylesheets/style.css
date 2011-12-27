@@ -1,0 +1,71 @@
+body {
+  padding-left: 50px;
+  padding-top: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/background.gif");
+}
+a {
+  color: #00b7ff;
+}
+.column {
+  width: 470px;
+  float: left;
+}
+.site1 {
+  width: 450px;
+  float: left;
+  margin: 5px;
+}
+.avatar {
+  box-shadow: 5px 5px 15px #888;
+}
+.avatar {
+  height: 320px;
+  width: 400px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 1px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.tweet-bubble2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: -10px;
+  background-image: url("/images/caption2.gif");
+  background-position: 0px 0px;
+  background-size: 140% 100%;
+}
+.tweet-bubble1 {
+  margin-bottom: -45px;
+  padding-bottom: 70px;
+  padding-top: 20px;
+  background-image: url("/images/caption1.gif");
+  background-position: -6px 0px;
+  background-size: 140% 130%;
+}
+.tweet-bubble3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: -40px;
+  background-image: url("/images/caption3.gif");
+  background-position: 0px 0px;
+  background-size: 132% 140%;
+}
+.twt-border,
+.twt-border .twt-reply {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.twt-tweet .twt-media img {
+  -webkit-border-radius: 150px !important;
+  -moz-border-radius: 150px !important;
+  border-radius: 150px !important;
+  box-shadow: 5px 5px 15px #999 !important;
+}
+.twt-reply .border {
+  border-bottom: none !important;
+}
